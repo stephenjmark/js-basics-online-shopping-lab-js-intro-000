@@ -24,8 +24,8 @@ function viewCart() {
   } else{
       var itemName = Object.keys(cart[0])
       var itemPrice = cart[0].itemName
-
-      console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)
+      var sentence = `In your cart, you have ${itemName} at $${itemPrice}.`
+      console.log(sentence)
     }
 
 }
