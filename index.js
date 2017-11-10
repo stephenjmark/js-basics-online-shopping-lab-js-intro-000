@@ -47,7 +47,7 @@ function viewCart() {
       } else{
         var sentence =  `In your cart, you have ${itemNameAndPrice.join(', ')}`
       }
-      
+
       console.log(sentence)
     }
 
