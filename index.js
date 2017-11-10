@@ -19,12 +19,30 @@ function addToCart(item) {
 function viewCart() {
   var cartCount = getCart().length
 
-  if(cartCount < 1){
+  if(cartCount === 0){
     console.log('Your shopping cart is empty.')
-  } else{
+  } else if (cartcount === 1){
       var itemName = Object.keys(cart[0])
       var itemPrice = cart[0][itemName]
       var sentence = `In your cart, you have ${itemName} at $${itemPrice}.`
+      console.log(sentence)
+    } else {
+      var itemNameAndPrice = new Array()
+      var sentence
+      
+      for (var i = 0; i < cartCount - 1; i++){
+        var itemName = Object.keys(cart[i])
+        var itemPrice = cart[i][itemName]
+        itemNameAndPrice.push(`${itemName} at $${itemPrice}`)
+      }
+      while (i === cartCount - 1){
+        var itemName = Object.keys(cart[i])
+        var itemPrice = cart[i][itemName]
+        itemNameAndPrice.push(`and ${itemName} at $${itemPrice}.`)
+        i++
+      }
+
+      var sentence =  `In your cart, you have ${itemNameAndPrice.join(', ')}`
       console.log(sentence)
     }
 
