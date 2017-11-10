@@ -21,7 +21,7 @@ function viewCart() {
 
   if(cartCount === 0){
     console.log('Your shopping cart is empty.')
-  } else if (cartcount === 1){
+  } else if (cartCount === 1){
       var itemName = Object.keys(cart[0])
       var itemPrice = cart[0][itemName]
       var sentence = `In your cart, you have ${itemName} at $${itemPrice}.`
