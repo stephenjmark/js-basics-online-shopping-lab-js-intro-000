@@ -19,7 +19,7 @@ function addToCart(item) {
 function viewCart() {
   var cartCount = getCart().length
 
-  if(cartCount === 0){
+  if(cartCount < 1){
     console.log('Your shopping cart is empty.')
   } else{
       var itemName = Object.keys(cart[0])
