@@ -26,7 +26,7 @@ function viewCart() {
       var itemPrice = cart[cartItems[0]];
       console.log(`In your cart, you have ${cartItems[0]} at $${itemPrice}.`)
     }
-  }
+  
 }
 
 function total() {
