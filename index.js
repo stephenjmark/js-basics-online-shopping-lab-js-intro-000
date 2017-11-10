@@ -23,7 +23,7 @@ function viewCart() {
     console.log('Your shopping cart is empty.')
   } else {
       var itemName = Object.keys(cart[0])
-      var itemPrice = Object.map(cart[0])
+      var itemPrice = cart[0].Object.keys(cart[0])
 
       console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)
     }
