@@ -54,7 +54,7 @@ function viewCart() {
 }
 
 function total() {
-  var orderPrice.push(itemPrice)
+  var orderPrice
   for (var i = 0; i < cartCount ; i++){
     var itemName = Object.keys(cart[i])
     var itemPrice = cart[i][itemName]
