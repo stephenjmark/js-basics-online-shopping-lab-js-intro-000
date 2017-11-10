@@ -55,18 +55,19 @@ function viewCart() {
 
 function total() {
   var orderPrice
+  var cartCount = getCart().length
   for (var i = 0; i < cartCount ; i++){
     var itemName = Object.keys(cart[i])
     var itemPrice = cart[i][itemName]
     orderPrice.push(itemPrice)
   }
 
-function getSum(total, num) {
-    return total + num;
-}
+  function getSum(total, num) {
+      return total + num;
+  }
 
-total = orderPrice.reduce(getSum)
-return total
+  total = orderPrice.reduce(getSum)
+  return total
 }
 
 function removeFromCart(item) {
