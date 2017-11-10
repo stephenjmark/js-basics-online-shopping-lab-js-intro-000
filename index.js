@@ -29,7 +29,7 @@ function viewCart() {
     } else {
       var itemNameAndPrice = new Array()
       var sentence
-      
+
       for (var i = 0; i < cartCount - 1; i++){
         var itemName = Object.keys(cart[i])
         var itemPrice = cart[i][itemName]
