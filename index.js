@@ -1,4 +1,4 @@
-var cart = new Object();
+var cart = new Array();
 
 function getCart() {
  return cart;
@@ -26,7 +26,7 @@ function viewCart() {
       var itemPrice = cart[cartItems[0]];
       console.log(`In your cart, you have ${cartItems[0]} at $${itemPrice}.`)
     }
-  
+
 }
 
 function total() {
