@@ -18,12 +18,11 @@ function addToCart(item) {
 
 function viewCart() {
   var cartCount = getCart().length
+  var cartItems = Object.keys(getCart());
 
   if(cartCount === 0){
     console.log('Your shopping cart is empty.')
   } else {
-      if (cartCount === 1) {
-      var cartItems = Object.keys(cart);
       var itemPrice = cart[cartItems[0]];
       console.log(`In your cart, you have ${cartItems[0]} at $${itemPrice}.`)
     }
