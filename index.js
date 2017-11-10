@@ -42,13 +42,12 @@ function viewCart() {
         i++
       }
 
-      if (cartCount === 2){
+      if (cartCount === 2) {
         var sentence =  `In your cart, you have ${itemNameAndPrice.join(' ')}`
       } else{
         var sentence =  `In your cart, you have ${itemNameAndPrice.join(', ')}`
       }
-
-      var sentence =  `In your cart, you have ${itemNameAndPrice.join(', ')}`
+      
       console.log(sentence)
     }
 
